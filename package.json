@@ -2,7 +2,7 @@
   "name": "wotd",
   "version": "1.0.0",
   "description": "Word of the Day",
-  "main": "app.js",
+  "main": "server.js",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
     "express": "^4.17.1",
