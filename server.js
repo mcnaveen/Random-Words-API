@@ -28,7 +28,7 @@ app.get('/', function (req, res) {
       }
 
       var post = $('#content .singlemeta:first-child .post');
-      var word = post.find('.title').eq(0).text().replace('\r\n\t\t\t\t\t', '').replace('\r\n\t\t\t\t', '');
+      var word = post.find('.title').eq(0).text().replace('\r\n\t\t\t\t\t', '').replace('\r\n\t\t\t\t', '').replace('\n\t\t\t\t\t','');
       var definition = post.find('p').eq(0).text().replace('\n', '');
       
       // create an object
