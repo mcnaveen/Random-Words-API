@@ -16,7 +16,7 @@ app.get('/', function (req, res) {
   // use Cheerio to make request
   request({
     method: 'GET',
-    url: 'http://www.wordthink.com'
+    url: 'https://randomword.com/'
     }, function(err, response, body, callback) {
       if (err) return console.error(err);
       
@@ -27,9 +27,9 @@ app.get('/', function (req, res) {
         wordOfDay = [];
       }
 
-      var post = $('#content .singlemeta:first-child .post');
-      var word = post.find('.title').eq(0).text().replace('\r\n\t\t\t\t\t', '').replace('\r\n\t\t\t\t', '').replace('\n\t\t\t\t\t','').replace('\n\t\t\t\t','');
-      var definition = post.find('p').eq(0).text().replace('\n', '');
+      var post = $('.section #shared_section');
+      var word = post.find('#random_word').eq(0).text().replace('\r\n\t\t\t\t\t', '').replace('\r\n\t\t\t\t', '').replace('\n\t\t\t\t\t','').replace('\n\t\t\t\t','');
+      var definition = post.find('#random_word_definition').eq(0).text().replace('\n', '');
       
       // create an object
       wordOfDay.push({word: word, definition: definition})
