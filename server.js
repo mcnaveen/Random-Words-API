@@ -4,7 +4,9 @@ var request = require('request');
 var app = express();
 var wordOfDay = [];
 
-var port = process.env.PORT || 3000;
+// start the server listening for requests
+app.listen(process.env.PORT || 3000, 
+	() => console.log("Server is running..."));
 
 app.get('/', function (req, res) {
   // allow access from other domains
