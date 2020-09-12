@@ -4,7 +4,7 @@ var request = require('request');
 var app = express();
 var wordOfDay = [];
 
-app.listen(process.env.PORT || 8080);
+var port = process.env.PORT || 3000;
 
 app.get('/', function (req, res) {
   // allow access from other domains
