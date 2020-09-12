@@ -4,9 +4,6 @@ var request = require('request');
 var app = express();
 var wordOfDay = [];
 
-// start the server listening for requests
-//app.set('port', process.env.PORT || 3000, 
-//	() => console.log("Server is running..."));
 
 app.get('/', function (req, res) {
   // allow access from other domains
@@ -17,10 +14,7 @@ app.get('/', function (req, res) {
   request({
     method: 'GET',
     url: 'https://randomword.com/'
-    },
-    headers: {
-        'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36' // optional headers
-     }, function(err, response, body, callback) {
+    }, function(err, response, body, callback) {
       if (err) return console.error(err);
       
       // get the HTML body from WordThink.com
