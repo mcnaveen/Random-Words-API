@@ -5,7 +5,7 @@ var app = express();
 var wordOfDay = [];
 
 // start the server listening for requests
-app.listen(process.env.PORT || 3000, 
+app.listen(process.env.PORT || 5000, 
 	() => console.log("Server is running..."));
 
 app.get('/', function (req, res) {
