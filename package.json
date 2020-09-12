@@ -1,0 +1,27 @@
+{
+  "name": "wotd",
+  "version": "1.0.0",
+  "description": "Word of the Day",
+  "main": "app.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm start"
+  },
+  "keywords": [
+    "Word",
+    "of",
+    "the",
+    "Day"
+  ],
+  "author": "MC Naveen",
+  "license": "ISC",
+  "engines": {
+    "node": "10.x"
+  }
+}
