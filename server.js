@@ -13,8 +13,11 @@ app.get('/', function (req, res) {
   // use Cheerio to make request
   request({
     method: 'GET',
-    url: 'https://randomword.com/'
-    }, function(err, response, body, callback) {
+    url: 'https://randomword.com/',
+    headers: {
+        'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36' // optional headers
+     }
+  }, function(err, response, body, callback) {
       if (err) return console.error(err);
       
       // get the HTML body from WordThink.com
