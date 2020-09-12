@@ -4,6 +4,8 @@ var request = require('request');
 var app = express();
 var wordOfDay = [];
 
+app.set('port', (process.env.PORT || 5000));
+
 app.get('/', function (req, res) {
   // allow access from other domains
   res.header('Access-Control-Allow-Origin', '*');
