@@ -5,8 +5,8 @@ var app = express();
 var wordOfDay = [];
 
 // start the server listening for requests
-app.set('port', process.env.PORT || 3000, 
-	() => console.log("Server is running..."));
+//app.set('port', process.env.PORT || 3000, 
+//	() => console.log("Server is running..."));
 
 app.get('/', function (req, res) {
   // allow access from other domains
@@ -32,7 +32,7 @@ app.get('/', function (req, res) {
       var definition = post.find('#random_word_definition').eq(0).text().replace('\n', '');
       
       // create an object
-      wordOfDay.push({word: word, definition: definition})
+      wordOfDay.push({word: word.charAt(0).toUpperCase() + word.slice(1), definition: definition.charAt(0).toUpperCase() + definition.slice(1)})
 
   });
   
