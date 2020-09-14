@@ -1,10 +1,12 @@
 var express = require('express');
 var cheerio = require('cheerio');
 var request = require('request');
+const randomUseragent = require('random-useragent');
+var rua = randomUseragent.getRandom();
 var app = express();
 var wordOfDay = [];
 
-
+// Load the Main JS
 app.get('/', function (req, res) {
   // allow access from other domains
   res.header('Access-Control-Allow-Origin', '*');
@@ -14,8 +16,9 @@ app.get('/', function (req, res) {
   request({
     method: 'GET',
     url: 'https://randomword.com/',
+    proxy: proxyGenerator(),
     headers: {
-        'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36' // optional headers
+        'User-Agent': rua // optional headers
      }
   }, function(err, response, body, callback) {
       if (err) return console.error(err);
@@ -34,11 +37,43 @@ app.get('/', function (req, res) {
       // create an object
       wordOfDay.push({word: word.charAt(0).toUpperCase() + word.slice(1), definition: definition.charAt(0).toUpperCase() + definition.slice(1)})
 
+      console.log("User-Agent:", rua);
+
   });
+  
   
   // return a JSON object as a response
   res.send(JSON.stringify(wordOfDay, null, 4));
 });
+
+// Random Proxy
+function proxyGenerator() {
+  let ip_addresses = [];
+  let port_numbers = [];
+  let proxy;
+
+  request("https://sslproxies.org/", function(error, response, html) {
+    if (!error && response.statusCode == 200) {
+      const $ = cheerio.load(html);
+
+      $("td:nth-child(1)").each(function(index, value) {
+        ip_addresses[index] = $(this).text();
+      });
+
+      $("td:nth-child(2)").each(function(index, value) {
+        port_numbers[index] = $(this).text();
+      });
+    } else {
+      console.log("Error loading proxy, please try again");
+    }
+
+    ip_addresses.join(", ");
+    port_numbers.join(", ");
+
+    //console.log("IP Addresses:", ip_addresses);
+    //console.log("Port Numbers:", port_numbers);
+  });
+}
 
 // start app on localhost port 3000
 var port = process.env.PORT || 3000;
