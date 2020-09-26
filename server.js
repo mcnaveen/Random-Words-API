@@ -1,9 +1,9 @@
 var express = require('express');
 var cheerio = require('cheerio');
 var request = require('request');
-var nlp = require('compromise')
-var nlpPronounce = require('compromise-pronounce')
-nlp.extend(nlpPronounce)
+var nlp = require('compromise');
+var nlpPronounce = require('compromise-pronounce');
+nlp.extend(nlpPronounce);
 const randomUseragent = require('random-useragent');
 var rua = randomUseragent.getRandom();
 var app = express();
