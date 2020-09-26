@@ -6,6 +6,8 @@
   "dependencies": {
     "api-key-auth": "^0.2.3",
     "cheerio": "^1.0.0-rc.3",
+    "compromise": "^13.5.0",
+    "compromise-pronounce": "0.0.2",
     "express": "^4.17.1",
     "random-useragent": "^0.5.0",
     "request": "^2.88.2"
