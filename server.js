@@ -2,6 +2,7 @@ var express = require('express');
 var cheerio = require('cheerio');
 var request = require('request');
 var nlp = require('compromise');
+var htmlspecialchars = require('htmlspecialchars');
 var nlpPronounce = require('compromise-pronounce');
 nlp.extend(nlpPronounce);
 const randomUseragent = require('random-useragent');
@@ -42,7 +43,7 @@ app.get('/', function (req, res) {
       var pronounce = pronounces.replace(",", "");
 
       // create an object
-      wordOfDay.push({word: word.charAt(0).toUpperCase() + word.slice(1), definition: definition.charAt(0).toUpperCase() + definition.slice(1), pronunciation: pronounce.charAt(0).toUpperCase() + pronounce.slice(1)})
+      wordOfDay.push({word: htmlspecialchars(word.charAt(0).toUpperCase() + word.slice(1)), definition: htmlspecialchars(definition.charAt(0).toUpperCase() + definition.slice(1)), pronunciation: htmlspecialchars(pronounce.charAt(0).toUpperCase() + pronounce.slice(1))})
 
       console.log("User-Agent:", rua);
 
