@@ -1,5 +1,28 @@
 {
-  "extends": [
-    "config:base"
-  ]
+	"extends": [
+		"config:base"
+	],
+	"automerge": true,
+	"major": {
+		"automerge": false
+	},
+	"lockFileMaintenance": {
+		"enabled": false,
+		"automerge": false
+	},
+	"travis": {
+		"enabled": true
+	},
+	"node": {
+		"supportPolicy": ["lts_active"]
+	},
+	"labels": [
+		"renovate"
+	],
+	"prHourlyLimit": 4,
+	"prConcurrentLimit": 15,
+	"rangeStrategy": "bump",
+	"bumpVersion": null,
+	"semanticCommits": true,
+	"schedule": "before 8am on Monday"
 }
