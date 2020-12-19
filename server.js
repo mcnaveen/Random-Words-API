@@ -14,8 +14,13 @@ var wordOfDay = [];
 app.get('/', function (req, res) {
   // allow access from other domains
   res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Headers', 'X-Requested-With');
+  res.header('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With');
+  res.header('Access-Control-Allow-Methods', 'GET');
+  res.header('X-Frame-Options', 'DENY');
+  res.header('X-Content-Type-Options', 'nosniff');
+  res.header('Strict-Transport-Security', 'max-age=63072000');
   res.setHeader('Content-Type', 'application/json');
+  app.disable( 'x-powered-by' );
   
   // use Cheerio to make request
   request({
@@ -47,12 +52,12 @@ app.get('/', function (req, res) {
       wordOfDay.push({word: htmlspecialchars(word.charAt(0).toUpperCase() + word.slice(1)), definition: htmlspecialchars(definition.charAt(0).toUpperCase() + definition.slice(1)), pronunciation: htmlspecialchars(pronounce.charAt(0).toUpperCase() + pronounce.slice(1))})
 
       console.log("User-Agent:", rua);
+        
+      // return a JSON object as a response
+     res.send(JSON.stringify(wordOfDay, null, 4));
 
   });
-  
-  
-  // return a JSON object as a response
-  res.send(JSON.stringify(wordOfDay, null, 4));
+
 });
 
 // Random Proxy
