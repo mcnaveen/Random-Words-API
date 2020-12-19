@@ -15,7 +15,7 @@ app.get('/', function (req, res) {
   // allow access from other domains
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Headers', 'X-Requested-With');
-  res.header('Content-type:application/json', 'charset=utf-8');
+  res.setHeader('Content-Type', 'application/json');
   
   // use Cheerio to make request
   request({
