@@ -23,6 +23,28 @@
 - [Join Telegram Channel](https://t.me/learnwordoftheday)
 - [Learn Online](https://wordsonrandom.netlify.app/)
 
+## :sparkles: Installation (Development)
+```
+# Clone the Repo
+git clone https://github.com/mcnaveen/Random-Words-API random-words
+
+# Cd into Directory
+cd random-words
+
+# Install Dependencies
+npm install
+
+# Start the Development Server
+node index.js
+```
+## 🔀 Deploying to Heroku & Vercel
+
+Follow the Documentation
+
+- [Deploying Node.js Apps on Heroku](https://devcenter.heroku.com/articles/deploying-nodejs)
+- [Deploying to Vercel](https://vercel.com/docs/platform/deployments#vercel-cli)
+
+
 ## CREDITS
 - Thanks to [Santhosh Veer](https://github.com/mskian) for Progressive Web APP - [Source Code](https://github.com/mskian/vue-random-words)
 
