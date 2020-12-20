@@ -17,4 +17,4 @@ jobs:
     - name: use node
       run: |
        npm install
-       npm action
+       npm run action
