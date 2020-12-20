@@ -23,10 +23,14 @@
 - [Join Telegram Channel](https://t.me/learnwordoftheday)
 - [Learn Online](https://wordsonrandom.netlify.app/)
 
+## CREDITS
+- Thanks to [Santhosh Veer](https://github.com/mskian) for Progressive Web APP - [Source Code](https://github.com/mskian/vue-random-words)
+
 ## :page_facing_up: LICENSE
 
 - MIT
 
 ## :rotating_light: DISCLAIMER
 We don't own any data or word. All belongs to the owner of Website. Use it for educational purpose only.
+
 
