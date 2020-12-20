@@ -26,8 +26,8 @@
     "Day"
   ],
   "author": "MC Naveen",
-  "license": "ISC",
+  "license": "MIT",
   "engines": {
-    "node": "10.x"
+    "node": "14.x"
   }
 }
