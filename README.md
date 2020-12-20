@@ -17,8 +17,9 @@ Feel free to use this API - `https://random-words-api.mcnaveen.vercel.app/`
   }
 ]
 ```
-## :bulb: Learn New word everyday at 8AM IST (GMT +0530)
+## :bulb: Learn New word
 - [Join Telegram Channel](https://t.me/learnwordoftheday)
+- [Learn Online](https://wordsonrandom.netlify.app/)
 
 ## :page_facing_up: LICENSE
 
