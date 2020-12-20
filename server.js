@@ -49,7 +49,7 @@ app.get('/', function (req, res) {
       var pronounce = pronounces.replace(",", "");
 
       // create an object
-      wordOfDay.push({word: word.charAt(0).toUpperCase() + word.slice(1), definition: definition.charAt(0).toUpperCase() + definition.slice(1), pronunciation: pronounce.charAt(0).toUpperCase() + pronounce.slice(1)})
+      wordOfDay.push({word: decodeURI(word.charAt(0).toUpperCase() + word.slice(1)), definition: decodeURI(definition.charAt(0).toUpperCase() + definition.slice(1)), pronunciation: decodeURI(pronounce.charAt(0).toUpperCase() + pronounce.slice(1))})
 
       console.log("User-Agent:", rua);
         
