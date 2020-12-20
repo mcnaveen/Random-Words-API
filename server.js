@@ -33,7 +33,7 @@ app.get('/', function (req, res) {
   }, function(err, response, body, callback) {
       if (err) return console.error(err);
       
-      // get the HTML body from WordThink.com
+      // get the HTML body from RandomWord.com
       $ = cheerio.load(body);
 
       if(wordOfDay.length > 0){
@@ -50,7 +50,8 @@ app.get('/', function (req, res) {
 
       // create an object
       wordOfDay.push({word: htmlspecialchars(word.charAt(0).toUpperCase() + word.slice(1)), definition: htmlspecialchars(definition.charAt(0).toUpperCase() + definition.slice(1)), pronunciation: htmlspecialchars(pronounce.charAt(0).toUpperCase() + pronounce.slice(1))})
-
+      
+      //Log the User Agent in Console
       console.log("User-Agent:", rua);
         
       // return a JSON object as a response
