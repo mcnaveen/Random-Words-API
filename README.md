@@ -37,13 +37,20 @@ npm install
 # Start the Development Server
 node index.js
 ```
-## 🔀 Deploying to Heroku & Vercel
+## 🔀 Deploying to Heroku
 
 Follow the Documentation
 
 - [Deploying Node.js Apps on Heroku](https://devcenter.heroku.com/articles/deploying-nodejs)
-- [Deploying to Vercel](https://vercel.com/docs/platform/deployments#vercel-cli)
 
+## 🔀 Deploying to Vercel
+```
+- Fork the Repo
+- Login to Vercel (https://vercel.com/dashboard)
+- Click Import Project
+- Give Forked Repo URL
+- Go Live
+```
 
 ## CREDITS
 - Thanks to [Santhosh Veer](https://github.com/mskian) for Progressive Web APP - [Source Code](https://github.com/mskian/vue-random-words)
