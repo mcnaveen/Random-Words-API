@@ -5,7 +5,7 @@
 :unicorn: Get Random Words (with pronunciation) for Free using this API
 
 ## :rocket: API
-Feel free to use this API - `https://random-words-api.mcnaveen.vercel.app/`
+Feel free to use this API - `https://random-words-api.vercel.app/`
 
 ## :globe_with_meridians: Sample API Response
 ```
