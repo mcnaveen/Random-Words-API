@@ -25,4 +25,8 @@
 
 ## :page_facing_up: LICENSE
 
-MIT
+- MIT
+
+## :rotating_light: DISCLAIMER
+We don't own any data or word. All belongs to the owner of Website. Use it for educational purpose only.
+
