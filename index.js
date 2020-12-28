@@ -11,7 +11,7 @@ var app = express();
 var wordOfDay = [];
 
 // Load the Main JS
-app.get('/', function (req, res) {
+app.get('/word', function (req, res) {
   // allow access from other domains
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With');
