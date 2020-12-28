@@ -5,7 +5,7 @@
 	"main": "server.js",
 	"dependencies": {
 		"api-key-auth": "^0.2.3",
-		"cheerio": "^1.0.0-rc.3",
+		"cheerio": "^1.0.0-rc.5",
 		"compromise": "^13.8.0",
 		"compromise-pronounce": "0.0.3",
 		"express": "^4.17.1",
