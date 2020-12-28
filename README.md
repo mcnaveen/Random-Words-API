@@ -5,7 +5,7 @@
 :unicorn: Get Random Words (with pronunciation) for Free using this API
 
 ## :rocket: API
-- Feel free to use this API - `https://random-words-api.vercel.app/word`
+- Feel free to use this API - `https://rapidapi.com/mcnaveen/api/random-words-with-pronunciation`
 
 - Demo - [Check Here](https://wordsonrandom.netlify.app/)
 
