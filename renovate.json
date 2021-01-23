@@ -1,28 +1,20 @@
 {
-	"extends": [
-		"config:base"
-	],
-	"automerge": true,
-	"major": {
-		"automerge": false
-	},
-	"lockFileMaintenance": {
-		"enabled": false,
-		"automerge": false
-	},
-	"travis": {
-		"enabled": true
-	},
-	"node": {
-		"supportPolicy": ["lts_active"]
-	},
-	"labels": [
-		"renovate"
-	],
-	"prHourlyLimit": 4,
-	"prConcurrentLimit": 15,
-	"rangeStrategy": "bump",
-	"bumpVersion": null,
-	"semanticCommits": true,
-	"schedule": "before 8am on Monday"
+  "extends": ["config:base"],
+  "automerge": true,
+  "major": {
+    "automerge": false
+  },
+  "lockFileMaintenance": {
+    "enabled": false,
+    "automerge": false
+  },
+  "node": {
+    "supportPolicy": ["lts_active"]
+  },
+  "labels": ["renovate"],
+  "rangeStrategy": "bump",
+  "bumpVersion": null,
+  "semanticCommits": true,
+  "timezone": "Asia/Kolkata",
+  "schedule": "on saturday and sunday"
 }
