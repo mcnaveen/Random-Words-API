@@ -1,23 +1,21 @@
-var cheerio = require('cheerio');
-var request = require('request');
-var nlp = require('compromise');
-var nlpPronounce = require('compromise-pronounce');
+const cheerio = require('cheerio');
+const nlp = require('compromise');
+const nlpPronounce = require('compromise-pronounce');
 nlp.extend(nlpPronounce);
 const randomUseragent = require('random-useragent');
-var rua = randomUseragent.getRandom();
+const axios = require('axios');
+const rua = randomUseragent.getRandom();
 var wordOfDay = [];
 
-
-request({
+axios({
     method: 'GET',
     url: 'https://randomword.com/',
     headers: {
         'User-Agent': rua
     }
-}, function(err, response, body, callback) {
-    if (err) return console.error(err);
+}).then(function(response) {
 
-    $ = cheerio.load(body);
+    $ = cheerio.load(response.data);
 
     if (wordOfDay.length > 0) {
         wordOfDay = [];
@@ -36,5 +34,12 @@ request({
         pronunciation: decodeURI(pronounce.charAt(0).toUpperCase() + pronounce.slice(1))
     })
     console.log("User-Agent:", rua);
-    console.log(JSON.stringify(wordOfDay, null, 4));
+    console.log(wordOfDay);
+
+}).catch(function(error) {
+    if (!error.response) {
+        console.log('API URL is Missing');
+    } else {
+        console.log('Something Went Wrong - Enter the Correct API URL');;
+    }
 });

@@ -1,0 +1,6 @@
+{
+    "name": "wotd",
+    "description": "Word of the Day.",
+    "repository": "https://github.com/mcnaveen/Random-Words-API",
+    "keywords": ["expressjs", "nodejs", "json"]
+}
