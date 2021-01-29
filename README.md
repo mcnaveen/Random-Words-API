@@ -17,9 +17,9 @@
 ```json
 [
   {
-    word: "Luculent",
-    definition: "Bright; clear; convincing ",
-    pronunciation: "Lukulent"
+    "word": "Exactor",
+    "definition": "One who exacts; extortioner; claimer of rights  ",
+    "pronunciation": "Eksaktor"
   }
 ]
 ```
