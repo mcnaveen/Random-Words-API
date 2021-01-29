@@ -6,9 +6,7 @@
 
 ## 🚀 API
 
-- Feel free to use this API via Rapidapi - `https://rapidapi.com/mcnaveen/api/random-words-with-pronunciation`
-
-- Main API - `https://random-words-api.vercel.app/word`
+- Free API - `https://random-words-api.vercel.app/word`
 
 - PWA Demo - [Check Here](https://words.sanweb.info/)
 
