@@ -72,10 +72,10 @@ cheerio@^1.0.0-rc.5:
     parse5 "^6.0.0"
     parse5-htmlparser2-tree-adapter "^6.0.0"
 
-compromise-pronounce@0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/compromise-pronounce/-/compromise-pronounce-0.0.3.tgz#1fb41006304e0247029e0571fa45ea267b302f84"
-  integrity sha512-Cjcp0P18/OUjqNoWmx7Twrz2zBi/KEitiarlPzlpVY0KYsuQ3akZiu4My8UGdfhUn51tRPkWhJPWhMxioUBqCw==
+compromise-pronounce@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/compromise-pronounce/-/compromise-pronounce-0.0.5.tgz#4200596e1a657ccd87f616bfc917338003858dc0"
+  integrity sha512-cjLx6JvyjI7u3OGmXhakmr8WwPhR55uukyMgeIbj2tgz3WjZoGT55DygKHNSjx32MZN6sJJxtT1zSjgbWMDmtw==
 
 compromise@^13.10.0:
   version "13.10.0"
