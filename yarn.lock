@@ -77,10 +77,10 @@ compromise-pronounce@0.0.5:
   resolved "https://registry.yarnpkg.com/compromise-pronounce/-/compromise-pronounce-0.0.5.tgz#4200596e1a657ccd87f616bfc917338003858dc0"
   integrity sha512-cjLx6JvyjI7u3OGmXhakmr8WwPhR55uukyMgeIbj2tgz3WjZoGT55DygKHNSjx32MZN6sJJxtT1zSjgbWMDmtw==
 
-compromise@^13.10.0:
-  version "13.10.0"
-  resolved "https://registry.yarnpkg.com/compromise/-/compromise-13.10.0.tgz#7bff1361aaa0ab66aa3520c098798ffe36d42b90"
-  integrity sha512-t0EOG82arnVeUIOuDhlqweXkADf98BNCCYqE2UtnZW/NKcX75zlrasvSMPxfjZpZiOUX3UdeRo5IqZ7JuyDkKg==
+compromise@^13.10.1:
+  version "13.10.1"
+  resolved "https://registry.yarnpkg.com/compromise/-/compromise-13.10.1.tgz#543670d19265f6e02ae1a313ad63e81a2b4b39c6"
+  integrity sha512-c6zhWJzXQBXWQXHqfVQC31KJHHW1VFP138TT2moE8A1qzzJfjjbBCxO227rPnCUTpg4I2+SHWfWpC8v/XoZ4Iw==
   dependencies:
     efrt-unpack "2.2.0"
 
