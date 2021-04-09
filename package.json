@@ -6,7 +6,7 @@
 	"main": "index.js",
 	"dependencies": {
 		"axios": "^0.21.1",
-		"cheerio": "^1.0.0-rc.5",
+		"cheerio": "^1.0.0-rc.6",
 		"compromise": "^13.10.5",
 		"compromise-pronounce": "0.0.5",
 		"express": "^4.17.1",
