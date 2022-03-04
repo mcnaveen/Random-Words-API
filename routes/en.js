@@ -9,10 +9,7 @@ var wordOfDay = [];
 
 router.get("/", function (req, res) {
   res.header("Access-Control-Allow-Origin", "*");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With"
-  );
+  res.header("Access-Control-Allow-Headers", "Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With");
   res.header("Access-Control-Allow-Methods", "GET");
   res.header("X-Frame-Options", "DENY");
   res.header("X-XSS-Protection", "1; mode=block");
