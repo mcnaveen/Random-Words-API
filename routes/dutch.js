@@ -51,15 +51,6 @@ router.get("/", function (req, res) {
         ),
       });
       res.send(JSON.stringify(dutchRandomWord, null, 2));
-    })
-    .catch(function (error) {
-      if (!error.response) {
-        console.log("API URL is Missing");
-        res.json("API URL is Missing");
-      } else {
-        console.log("Something Went Wrong - Enter the Correct API URL");
-        res.json("Something Went Wrong - Enter the Correct API URL");
-      }
     });
 });
 
