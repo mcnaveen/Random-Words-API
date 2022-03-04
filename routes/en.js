@@ -3,7 +3,7 @@ const router = express.Router();
 const axios = require("axios");
 const cheerio = require("cheerio");
 const { pronounce } = require("node-pronounce");
-const randomUseragent = require('random-useragent');
+const randomUseragent = require("random-useragent");
 const rua = randomUseragent.getRandom();
 var wordOfDay = [];
 
@@ -24,8 +24,8 @@ router.get("/", function (req, res) {
     method: "GET",
     url: "https://randomword.com/",
     headers: {
-        'User-Agent': rua
-    }
+      "User-Agent": rua,
+    },
   })
     .then(function (response) {
       $ = cheerio.load(response.data);
@@ -55,7 +55,7 @@ router.get("/", function (req, res) {
           definition.charAt(0).toUpperCase() + definition.slice(1)
         ),
         pronunciation: decodeURI(
-          pronounceword.charAt(0).toUpperCase() + pronounce.slice(1)
+          pronounceword.charAt(0).toUpperCase() + pronounceword.slice(1)
         ),
       });
       res.send(JSON.stringify(wordOfDay, null, 2));

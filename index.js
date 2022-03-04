@@ -11,7 +11,7 @@ app.use('/word', en);
 app.use('/word/dutch', dutch);
 
 // start app on localhost port 3000
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 3000;
 app.listen(port, function() {
     console.log('listening on port ' + port);
 });

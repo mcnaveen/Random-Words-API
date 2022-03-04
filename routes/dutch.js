@@ -3,8 +3,10 @@ const router = express.Router();
 const axios = require("axios");
 const cheerio = require("cheerio");
 const { pronounce } = require("node-pronounce");
-const randomUseragent = require('random-useragent');
+const randomUseragent = require("random-useragent");
 const rua = randomUseragent.getRandom();
+const { randNum } = require("../utils/randomNum");
+const rand = randNum(1, 8);
 var dutchRandomWord = [];
 
 router.get("/", function (req, res) {
@@ -24,8 +26,8 @@ router.get("/", function (req, res) {
     method: "GET",
     url: "https://www.generatormix.com/random-dutch-words-generator",
     headers: {
-        'User-Agent': rua
-    }
+      "User-Agent": rua,
+    },
   })
     .then(function (response) {
       $ = cheerio.load(response.data);
@@ -34,9 +36,9 @@ router.get("/", function (req, res) {
         dutchRandomWord = [];
       }
       let post = $("#output > div");
-      let word = post.find("div:nth-child(1) > h3")[0].children[0].data;
+      let word = post.find(`div:nth-child(${rand}) > h3`)[0].children[0].data;
       let definition = post
-        .find("div:nth-child(1) > span")[0]
+        .find(`div:nth-child(${rand}) > span`)[0]
         .children[0].data.replace("Meaning: ", "");
       let pronunciation = pronounce(word);
       dutchRandomWord.push({
