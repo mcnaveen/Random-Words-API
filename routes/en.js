@@ -1,8 +1,10 @@
 const express = require("express");
+const router = express.Router();
+const axios = require("axios");
 const cheerio = require("cheerio");
 const { pronounce } = require("node-pronounce");
-const axios = require("axios");
-const router = express.Router();
+const randomUseragent = require('random-useragent');
+const rua = randomUseragent.getRandom();
 var wordOfDay = [];
 
 router.get("/", function (req, res) {
@@ -21,6 +23,9 @@ router.get("/", function (req, res) {
   axios({
     method: "GET",
     url: "https://randomword.com/",
+    headers: {
+        'User-Agent': rua
+    }
   })
     .then(function (response) {
       $ = cheerio.load(response.data);

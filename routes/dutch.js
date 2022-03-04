@@ -3,6 +3,8 @@ const router = express.Router();
 const axios = require("axios");
 const cheerio = require("cheerio");
 const { pronounce } = require("node-pronounce");
+const randomUseragent = require('random-useragent');
+const rua = randomUseragent.getRandom();
 var dutchRandomWord = [];
 
 router.get("/", function (req, res) {
@@ -21,6 +23,9 @@ router.get("/", function (req, res) {
   axios({
     method: "GET",
     url: "https://www.generatormix.com/random-dutch-words-generator",
+    headers: {
+        'User-Agent': rua
+    }
   })
     .then(function (response) {
       $ = cheerio.load(response.data);
