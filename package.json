@@ -7,15 +7,15 @@
 	"dependencies": {
 		"axios": "^0.24.0",
 		"cheerio": "^1.0.0-rc.10",
-		"compromise": "^13.11.4",
-		"compromise-pronounce": "0.0.5",
 		"express": "^4.17.1",
+		"node-pronounce": "^0.0.3",
 		"random-useragent": "^0.5.0"
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "node index.js",
-		"action": "node test.js"
+		"action": "node test.js",
+		"dev": "nodemon index.js"
 	},
 	"keywords": [
 		"Word",
@@ -32,5 +32,8 @@
 	},
 	"homepage": "https://github.com/mcnaveen/Random-Words-API/#readme",
 	"author": "MC Naveen",
-	"license": "MIT"
+	"license": "MIT",
+	"devDependencies": {
+		"nodemon": "^2.0.15"
+	}
 }
