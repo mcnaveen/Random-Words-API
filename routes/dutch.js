@@ -28,30 +28,34 @@ router.get("/", function (req, res) {
     headers: {
       "User-Agent": rua,
     },
-  }).then(function (response) {
-    $ = cheerio.load(response.data);
+  })
+    .then(function (response) {
+      $ = cheerio.load(response.data);
 
-    if (dutchRandomWord.length > 0) {
-      dutchRandomWord = [];
-    }
-    let post = $("#output > div");
-    let word = post.find(`div:nth-child(${rand}) > h3`)[0].children[0].data;
-    let definition = post
-      .find(`div:nth-child(${rand}) > span`)[0]
-      .children[0].data.replace("Meaning: ", "");
-    let pronunciation = pronounce(word);
-    dutchRandomWord.push({
-      word: decodeURI(word.charAt(0).toUpperCase() + word.slice(1)),
-      definition: decodeURI(
-        definition.charAt(0).toUpperCase() + definition.slice(1)
-      ),
-      pronunciation: decodeURI(
-        pronunciation.charAt(0).toUpperCase() + pronunciation.slice(1)
-      ),
+      if (dutchRandomWord.length > 0) {
+        dutchRandomWord = [];
+      }
+      let post = $("#output > div");
+      let word = post.find(`div:nth-child(${rand}) > h3`)[0].children[0].data;
+      let definition = post
+        .find(`div:nth-child(${rand}) > span`)[0]
+        .children[0].data.replace("Meaning: ", "");
+      let pronunciation = pronounce(word);
+      dutchRandomWord.push({
+        word: decodeURI(word.charAt(0).toUpperCase() + word.slice(1)),
+        definition: decodeURI(
+          definition.charAt(0).toUpperCase() + definition.slice(1)
+        ),
+        pronunciation: decodeURI(
+          pronunciation.charAt(0).toUpperCase() + pronunciation.slice(1)
+        ),
+      });
+      console.log(dutchRandomWord);
+      res.send(JSON.stringify(dutchRandomWord, null, 2));
+    })
+    .catch((error) => {
+      console.log(error.response);
     });
-    console.log(dutchRandomWord);
-    res.send(JSON.stringify(dutchRandomWord, null, 2));
-  });
 });
 
 module.exports = router;
