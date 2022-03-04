@@ -50,6 +50,7 @@ router.get("/", function (req, res) {
           pronunciation.charAt(0).toUpperCase() + pronunciation.slice(1)
         ),
       });
+      console.log(dutchRandomWord);
       res.send(JSON.stringify(dutchRandomWord, null, 2));
     })
     .catch(function (error) {
