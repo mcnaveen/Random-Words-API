@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/data/*": [
+                "data/*"
+            ],
+            "@/utils/*": [
+                "utils/*"
+            ]
+        }
+    }
+}
