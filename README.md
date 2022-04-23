@@ -7,6 +7,7 @@
 ## 🚀 API
 
 - Free API - `https://random-words-api.vercel.app/word`
+- Dutch Random Words - `https://random-words-api.vercel.app/word/dutch`
 
 - PWA Demo - [Check Here](https://words.sanweb.info/)
 
@@ -18,6 +19,17 @@
     "word": "Exactor",
     "definition": "One who exacts; extortioner; claimer of rights  ",
     "pronunciation": "Eksaktor"
+  }
+]
+```
+
+## 🌐 Sample Dutch Response
+```json
+[
+  {
+    "word": "Perfect",
+    "definition": "Perfect",
+    "pronunciation": "Perfekt"
   }
 ]
 ```
