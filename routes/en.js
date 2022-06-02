@@ -20,9 +20,11 @@ router.get("/", function (req, res) {
   res.header("Strict-Transport-Security", "max-age=63072000");
   res.setHeader("Content-Type", "application/json");
 
+  const partOfSpeech = req.query.type;
+
   axios({
     method: "GET",
-    url: "https://randomword.com/",
+    url: partOfSpeech ? `https://randomword.com/${partOfSpeech}` : `https://randomword.com`,
     headers: {
       "User-Agent": rua,
     },
