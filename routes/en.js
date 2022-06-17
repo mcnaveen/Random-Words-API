@@ -6,6 +6,7 @@ const { pronounce } = require("node-pronounce");
 const randomUseragent = require("random-useragent");
 const rua = randomUseragent.getRandom();
 var wordOfDay = [];
+const baseUrl = 'https://randomword.com';
 
 router.get("/", function (req, res) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -20,11 +21,9 @@ router.get("/", function (req, res) {
   res.header("Strict-Transport-Security", "max-age=63072000");
   res.setHeader("Content-Type", "application/json");
 
-  const partOfSpeech = req.query.type;
-
   axios({
     method: "GET",
-    url: 'https://randomword.com',
+    url: baseUrl,
     headers: {
       "User-Agent": rua,
     },
@@ -74,8 +73,6 @@ router.get("/", function (req, res) {
 });
 
 router.get("/:pos", function (req, res) {
-
-  const partOfSpeech = req.params.pos;
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
     "Access-Control-Allow-Headers",
@@ -88,9 +85,11 @@ router.get("/:pos", function (req, res) {
   res.header("Strict-Transport-Security", "max-age=63072000");
   res.setHeader("Content-Type", "application/json");
 
+  const partOfSpeech = req.params.pos;
+
   axios({
     method: "GET",
-    url: `https://randomword.com/${partOfSpeech}`,
+    url: `${baseUrl}/${partOfSpeech}`,
     headers: {
       "User-Agent": rua,
     },
