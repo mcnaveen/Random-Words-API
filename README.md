@@ -11,6 +11,25 @@
 
 - PWA Demo - [Check Here](https://words.sanweb.info/)
 
+## 🎛 Route Options
+
+- Base URL: `https://random-words-api.vercel.app/word`
+```html
+- /noun
+- /sentence
+- /question
+- /adjective
+- /idiom
+- /verb
+- /letter
+- /paragraph
+- /vocabulary
+- /1-word-quotes
+- /2-word-quotes
+- /3-word-quotes
+- /affirmation
+```
+
 ## 🌐 Sample API Response
 
 ```json
