@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "jonah-butler",
+      "name": "jonah-butler",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18040568?v=4",
+      "profile": "https://github.com/jonah-butler",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "Random-Words-API",
+  "projectOwner": "mcnaveen",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
