@@ -13,6 +13,17 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "mskian",
+      "name": "Santhosh Veer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10300271?v=4",
+      "profile": "https://santhoshveer.com/",
+      "contributions": [
+        "code",
+        "doc",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
