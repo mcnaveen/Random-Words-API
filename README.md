@@ -1,6 +1,6 @@
 # Random Words API
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![build-test](https://github.com/mcnaveen/Random-Words-API/workflows/build-test/badge.svg)
@@ -125,6 +125,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/jonah-butler"><img src="https://avatars.githubusercontent.com/u/18040568?v=4?s=100" width="100px;" alt=""/><br /><sub><b>jonah-butler</b></sub></a><br /><a href="https://github.com/mcnaveen/Random-Words-API/commits?author=jonah-butler" title="Code">💻</a></td>
+    <td align="center"><a href="https://santhoshveer.com/"><img src="https://avatars.githubusercontent.com/u/10300271?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Santhosh Veer</b></sub></a><br /><a href="https://github.com/mcnaveen/Random-Words-API/commits?author=mskian" title="Code">💻</a> <a href="https://github.com/mcnaveen/Random-Words-API/commits?author=mskian" title="Documentation">📖</a> <a href="#ideas-mskian" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
