@@ -99,6 +99,21 @@ OR
 - Go Live
 ```
 
+## ✍️ Commit
+
+- Stage all changes
+```
+git add .
+``` 
+- Commit the changes
+```
+yarn commit
+```
+- Push the changes to GitHub
+```
+git push <TO YOUR FORK>
+```
+
 ## ⚛ CREDITS
 
 - Thanks to [Santhosh Veer](https://github.com/mskian) for Progressive Web APP - [Source Code](https://github.com/mskian/vue-random-words)  

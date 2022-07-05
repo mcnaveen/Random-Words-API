@@ -2,7 +2,7 @@ import express from "express";
 const router = express.Router();
 import { pronounce } from "node-pronounce";
 import { readFileSync } from "fs";
-import { randomArrayItem } from "../utils/randomArrayItem.js";
+import { randomArrayItem } from "random-array-item";
 var dutchRandomWord = [];
 const dutchWordsData  = JSON.parse(readFileSync(new URL("../data/dutch/words.json", import.meta.url)));
 
