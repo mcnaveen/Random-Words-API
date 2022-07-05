@@ -1,16 +1,14 @@
-const express = require('express');
+import express from "express";
 const app = express();
 
-// Importing the routes
-const home = require('./routes/home');
-const en = require('./routes/en');
-const dutch = require('./routes/dutch');
+import home from './routes/home.js';
+import en from './routes/en.js';
+import dutch from './routes/dutch.js';
 
 app.use('/', home);
-app.use('/word', en);
 app.use('/word/dutch', dutch);
+app.use('/word', en);
 
-// start app on localhost port 3000
 var port = process.env.PORT || 3000;
 app.listen(port, function() {
     console.log('listening on port ' + port);

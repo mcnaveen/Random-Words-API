@@ -249,17 +249,19 @@ combined-stream@^1.0.8:
   dependencies:
     delayed-stream "~1.0.0"
 
-compromise-pronounce@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/compromise-pronounce/-/compromise-pronounce-0.0.5.tgz#4200596e1a657ccd87f616bfc917338003858dc0"
-  integrity sha512-cjLx6JvyjI7u3OGmXhakmr8WwPhR55uukyMgeIbj2tgz3WjZoGT55DygKHNSjx32MZN6sJJxtT1zSjgbWMDmtw==
+compromise-speech@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/compromise-speech/-/compromise-speech-0.1.0.tgz#4ca319787ffec6c1372f3f8aa7f9956cffb0d9c8"
+  integrity sha512-+2KS/8T3SH5Hcd6tsCBVfxrkdi7sbJfKAeXGYimQdKGgweDMt0FT03wVCDZ6EgLYxReftkRKp1pxLx2pQLj4Kg==
 
-compromise@^13.11.4:
-  version "13.11.4"
-  resolved "https://registry.yarnpkg.com/compromise/-/compromise-13.11.4.tgz#3136e6d2c2cca822ba7cebd140c9f27f405b67f1"
-  integrity sha512-nBITcNdqIHSVDDluaG6guyFFCSNXN+Hu87fU8VlhkE5Z0PwTZN1nro2O7a8JcUH88nB5EOzrxd9zKfXLSNFqcg==
+compromise@^14.4.0:
+  version "14.4.0"
+  resolved "https://registry.yarnpkg.com/compromise/-/compromise-14.4.0.tgz#779d07c90b41606bb4624942ec841ae8a8806e24"
+  integrity sha512-09bovqZT1NX84o/ntjftaY2XMdnm9pLJxB8N7IgAPFwytRNSEevB0aBnVFSR85VyAr+Spcjy6bDk5BYXcKDWkg==
   dependencies:
-    efrt-unpack "2.2.0"
+    efrt "2.6.0"
+    grad-school "0.0.5"
+    suffix-thumb "4.0.2"
 
 concat-map@0.0.1:
   version "0.0.1"
@@ -414,10 +416,10 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
-efrt-unpack@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/efrt-unpack/-/efrt-unpack-2.2.0.tgz#b05dbec0fb8cb346a27840e00c969df9c72fee52"
-  integrity sha512-9xUSSj7qcUxz+0r4X3+bwUNttEfGfK5AH+LVa1aTpqdAfrN5VhROYCfcF+up4hp5OL7IUKcZJJrzAGipQRDoiQ==
+efrt@2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/efrt/-/efrt-2.6.0.tgz#27854df4b0f596bf7b4444b594a1a58cfad421ca"
+  integrity sha512-uVeV82e9c/n/8/QyWVbbt4jvvbVOvgYwnKE59KpwJ1DD7AGXWytU9v32v5SuvxKNl9V9JaudsMPtztJNY+Batg==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -605,6 +607,11 @@ graceful-fs@^4.1.2:
   version "4.2.9"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.9.tgz#041b05df45755e587a24942279b9d113146e1c96"
   integrity sha512-NtNxqUcXgpW2iMrfqSfR73Glt39K+BLwWsPs94yR63v45T0Wbej7eRmL5cWfwEgqXnmjQp3zaJTshdRW/qC2ZQ==
+
+grad-school@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/grad-school/-/grad-school-0.0.5.tgz#9e7b2084f3e137965c19b63ef0dfe49867194f43"
+  integrity sha512-rXunEHF9M9EkMydTBux7+IryYXEZinRk6g8OBOGDBzo/qWJjhTxy86i5q7lQYpCLHN8Sqv1XX3OIOc7ka2gtvQ==
 
 has-flag@^3.0.0:
   version "3.0.0"
@@ -906,13 +913,13 @@ negotiator@0.6.3:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.3.tgz#58e323a72fedc0d6f9cd4d31fe49f51479590ccd"
   integrity sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==
 
-node-pronounce@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/node-pronounce/-/node-pronounce-0.0.3.tgz#9555d1740966bad0436e212dee8d97a09c5e0faa"
-  integrity sha512-nFKwpp8f5DjNe/jjfUGaY6bWCuRAh3hEfpVYS7ZfMA1GHJQuP1UKlu6CvSfPW1RmTs/8xgqPE8BmI2kdb4q9Ag==
+node-pronounce@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/node-pronounce/-/node-pronounce-0.0.4.tgz#48134a579d32451a907692f9193624e60ad754c2"
+  integrity sha512-rX8YDCHU2uXMVklgaZ2OsuEzpp9Vg4ms1qnn6qTTA1wrU596N5rJv8Q+62xvLPj70jPJ8S+K24XiTTprecj0rQ==
   dependencies:
-    compromise "^13.11.4"
-    compromise-pronounce "^0.0.5"
+    compromise "^14.4.0"
+    compromise-speech "^0.1.0"
 
 nodemon@^2.0.18:
   version "2.0.18"
@@ -1232,6 +1239,11 @@ strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
+
+suffix-thumb@4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/suffix-thumb/-/suffix-thumb-4.0.2.tgz#9303c1be8252bf79d9c57e5737d7d849d1f6abc9"
+  integrity sha512-CCvCAr7JyeQoO+/lyq3P2foZI/xJz5kpG3L6kg2CaOf9K2/gaM9ixy/JTuRwjEK38l306zE7vl3JoOZYmLQLlA==
 
 supports-color@^5.5.0:
   version "5.5.0"
