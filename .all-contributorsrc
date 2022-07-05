@@ -23,7 +23,9 @@
       "contributions": [
         "code",
         "doc",
-        "ideas"
+        "ideas",
+        "maintenance",
+        "bug"
       ]
     }
   ],
