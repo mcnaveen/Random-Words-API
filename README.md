@@ -99,7 +99,7 @@ OR
 - Go Live
 ```
 
-### ✍️ Commit
+## ✍️ Commit
 
 - Stage all changes
 ```
