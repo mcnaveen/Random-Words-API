@@ -1,19 +1,16 @@
-const express = require("express");
+import express from "express";
 const router = express.Router();
-const axios = require("axios");
-const cheerio = require("cheerio");
-const { pronounce } = require("node-pronounce");
-const randomUseragent = require("random-useragent");
+import axios from "axios";
+import * as  cheerio from "cheerio";
+import { pronounce } from "node-pronounce";
+import randomUseragent from "random-useragent";
 const rua = randomUseragent.getRandom();
 var wordOfDay = [];
 const baseUrl = 'https://randomword.com';
 
 router.get("/", function (req, res) {
   res.header("Access-Control-Allow-Origin", "*");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With"
-  );
+  res.header('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With');
   res.header("Access-Control-Allow-Methods", "GET");
   res.header("X-Frame-Options", "DENY");
   res.header("X-XSS-Protection", "1; mode=block");
@@ -29,7 +26,7 @@ router.get("/", function (req, res) {
     },
   })
     .then(function (response) {
-      $ = cheerio.load(response.data);
+      const $ = cheerio.load(response.data);
       if (wordOfDay.length > 0) {
         wordOfDay = [];
       }
@@ -74,10 +71,7 @@ router.get("/", function (req, res) {
 
 router.get("/:pos", function (req, res) {
   res.header("Access-Control-Allow-Origin", "*");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With"
-  );
+  res.header('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With');
   res.header("Access-Control-Allow-Methods", "GET");
   res.header("X-Frame-Options", "DENY");
   res.header("X-XSS-Protection", "1; mode=block");
@@ -95,7 +89,7 @@ router.get("/:pos", function (req, res) {
     },
   })
     .then(function (response) {
-      $ = cheerio.load(response.data);
+      const $ = cheerio.load(response.data);
       if (wordOfDay.length > 0) {
         wordOfDay = [];
       }
@@ -138,4 +132,4 @@ router.get("/:pos", function (req, res) {
     });
 });
 
-module.exports = router;
+export default router;

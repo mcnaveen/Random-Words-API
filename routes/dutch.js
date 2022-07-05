@@ -1,16 +1,14 @@
-const express = require("express");
+import express from "express";
 const router = express.Router();
-const { pronounce } = require("node-pronounce");
-const dutchWordsData = require("../data/dutch/words.json"); //Import Dutchs
-const { randomArrayItem } = require("../utils/randomArrayItem");
+import { pronounce } from "node-pronounce";
+import { readFileSync } from "fs";
+import { randomArrayItem } from "../utils/randomArrayItem.js";
 var dutchRandomWord = [];
+const dutchWordsData  = JSON.parse(readFileSync(new URL("../data/dutch/words.json", import.meta.url)));
 
 router.get("/", function (req, res) {
   res.header("Access-Control-Allow-Origin", "*");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With"
-  );
+  res.header('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With');
   res.header("Access-Control-Allow-Methods", "GET");
   res.header("X-Frame-Options", "DENY");
   res.header("X-XSS-Protection", "1; mode=block");
@@ -40,4 +38,4 @@ router.get("/", function (req, res) {
   res.send(JSON.stringify(dutchRandomWord, null, 2));
 });
 
-module.exports = router;
+export default router;
