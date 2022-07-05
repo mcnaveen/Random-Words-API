@@ -9,13 +9,15 @@
 		"cheerio": "^1.0.0-rc.12",
 		"express": "^4.18.1",
 		"node-pronounce": "^0.0.4",
+		"random-array-item": "^0.0.2",
 		"random-useragent": "^0.5.0"
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "node index.js",
 		"action": "node test.js",
-		"dev": "nodemon index.js --ext '*'"
+		"dev": "nodemon index.js --ext '*'",
+		"commit": "gacp"
 	},
 	"type": "module",
 	"keywords": [
@@ -35,6 +37,13 @@
 	"author": "MC Naveen",
 	"license": "MIT",
 	"devDependencies": {
+		"gacp": "^3.0.2",
 		"nodemon": "^2.0.18"
+	},
+	"gacp": {
+		"add": false,
+		"push": false,
+		"emoji": "emoji",
+		"editor": false
 	}
 }
