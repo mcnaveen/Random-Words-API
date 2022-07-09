@@ -38,7 +38,7 @@
 	"license": "MIT",
 	"devDependencies": {
 		"gacp": "^3.0.2",
-		"nodemon": "^2.0.18"
+		"nodemon": "^2.0.19"
 	},
 	"gacp": {
 		"add": false,
