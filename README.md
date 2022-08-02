@@ -11,6 +11,7 @@
 
 - Free API - `https://random-words-api.vercel.app/word`
 - Dutch Random Words - `https://random-words-api.vercel.app/word/dutch`
+- Get Pronunciation for a Word - `http://localhost:3000/word/pronounce/hello%20world`
 
 - PWA Demo - [Check Here](https://words.sanweb.info/)
 
@@ -54,6 +55,12 @@
     "pronunciation": "Perfekt"
   }
 ]
+```
+
+## 🌐 Sample Pronunciation Response
+
+```json
+"helo worlt"
 ```
 
 ## 💡 Learn New word
