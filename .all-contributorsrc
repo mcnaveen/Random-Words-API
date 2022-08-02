@@ -6,20 +6,6 @@
   "commit": false,
   "contributors": [
     {
-      "login": "mcnaveen",
-      "name": "MC Naveen",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8493007?v=4",
-      "profile": "https://github.com/mcnaveen",
-      "contributions": [
-        "code",
-        "data",
-        "doc",
-        "ideas",
-        "maintenance",
-        "review"
-      ]
-    },
-    {
       "login": "jonah-butler",
       "name": "jonah-butler",
       "avatar_url": "https://avatars.githubusercontent.com/u/18040568?v=4",

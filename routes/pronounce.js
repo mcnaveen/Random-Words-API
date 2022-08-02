@@ -20,7 +20,7 @@ router.post("/", function (req, res) {
   var userWord = encodeURIComponent(req.body.word);
   let wordData = pronounce(userWord);
   const pronouncedWord = decodeURIComponent(wordData);
-  res.status(200).json({ word: pronouncedWord });
+  res.status(200).json({ pronunciation: pronouncedWord });
 });
 
 export default router;
