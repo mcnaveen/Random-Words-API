@@ -12,8 +12,8 @@ router.get("/:word", function (req, res) {
   res.header("Strict-Transport-Security", "max-age=63072000");
   res.setHeader("Content-Type", "application/json");
 
-    var userword = encodeURIComponent(req.params.word) || "Automation";
-    let wordData = pronounce(userword);
+    var userWord = encodeURIComponent(req.params.word) || "Automation";
+    let wordData = pronounce(userWord);
     var pronouncedWord = decodeURIComponent(wordData);
     res.status(200).json(pronouncedWord);
 
