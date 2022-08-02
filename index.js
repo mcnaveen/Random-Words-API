@@ -8,8 +8,8 @@ import pronounce from './routes/pronounce.js';
 
 app.use('/', home);
 app.use('/word/dutch', dutch);
-app.use('/word/pronounce', pronounce);
 app.use('/word', en);
+app.use('/pronounce', pronounce);
 
 app.use('/', function(req, res) {
     res.status(404).json({
