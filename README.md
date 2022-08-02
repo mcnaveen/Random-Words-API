@@ -1,6 +1,9 @@
 # Random Words API
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![build-test](https://github.com/mcnaveen/Random-Words-API/workflows/build-test/badge.svg)
@@ -11,27 +14,18 @@
 
 - Free API - `https://random-words-api.vercel.app/word`
 - Dutch Random Words - `https://random-words-api.vercel.app/word/dutch`
-- Get Pronunciation for a Word - `https://random-words-api.vercel.app/pronounce/hello%20world`
+- Get Pronunciation for a Word - `https://random-words-api.vercel.app/pronounce/`
 
 - PWA Demo - [Check Here](https://words.sanweb.info/)
 
 ## 🎛 Route Options
 
 - Base URL: `https://random-words-api.vercel.app/word`
+
 ```html
-- /noun
-- /sentence
-- /question
-- /adjective
-- /idiom
-- /verb
-- /letter
-- /paragraph
-- /vocabulary
-- /1-word-quotes
-- /2-word-quotes
-- /3-word-quotes
-- /affirmation
+- /noun - /sentence - /question - /adjective - /idiom - /verb - /letter -
+/paragraph - /vocabulary - /1-word-quotes - /2-word-quotes - /3-word-quotes -
+/affirmation
 ```
 
 ## 🌐 Sample API Response
@@ -47,6 +41,7 @@
 ```
 
 ## 🌐 Sample Dutch Response
+
 ```json
 [
   {
@@ -57,11 +52,26 @@
 ]
 ```
 
-## 🌐 Sample Pronunciation Response
+## 🌐 Sample Pronunciation Request
 
 ```json
-"helo worlt"
+POST http://localhost:3000/pronounce
+Content-Type: application/json
+
+{
+  "word": "This is amazing"
+}
 ```
+
+## 📣 Sample Pronunciation Response
+
+```json
+{
+  "pronunciation": "this is amasink"
+}
+```
+
+- Check [api.rest](/api.rest) file for more details
 
 ## 💡 Learn New word
 
@@ -88,42 +98,44 @@ yarn start
 
 OneClick Deploy on Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mcnaveen/Random-Words-API)  
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mcnaveen/Random-Words-API)
 
 ## 🔀 Deploying to Vercel
 
 OneClick Deploy on Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fmcnaveen%2FRandom-Words-API.git)  
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fmcnaveen%2FRandom-Words-API.git)
 
 OR
 
 ```html
-- Fork the Repo
-- Login to Vercel (https://vercel.com/dashboard)
-- Click Import Project
-- Give Forked Repo URL
-- Go Live
+- Fork the Repo - Login to Vercel (https://vercel.com/dashboard) - Click Import
+Project - Give Forked Repo URL - Go Live
 ```
 
 ## ✍️ Commit
 
 - Stage all changes
+
 ```
 git add .
-``` 
+```
+
 - Commit the changes
+
 ```
 yarn commit
 ```
+
 - Push the changes to GitHub
+
 ```
 git push <TO YOUR FORK>
 ```
 
 ## ⚛ CREDITS
 
-- Thanks to [Santhosh Veer](https://github.com/mskian) for Progressive Web APP - [Source Code](https://github.com/mskian/vue-random-words)  
+- Thanks to [Santhosh Veer](https://github.com/mskian) for Progressive Web APP - [Source Code](https://github.com/mskian/vue-random-words)
 
 ## ☑ LICENSE
 
