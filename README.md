@@ -11,7 +11,7 @@
 
 - Free API - `https://random-words-api.vercel.app/word`
 - Dutch Random Words - `https://random-words-api.vercel.app/word/dutch`
-- Get Pronunciation for a Word - `http://localhost:3000/pronounce/hello%20world`
+- Get Pronunciation for a Word - `https://random-words-api.vercel.app/pronounce/hello%20world`
 
 - PWA Demo - [Check Here](https://words.sanweb.info/)
 
