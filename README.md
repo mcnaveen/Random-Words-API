@@ -1,9 +1,7 @@
 # Random Words API
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![build-test](https://github.com/mcnaveen/Random-Words-API/workflows/build-test/badge.svg)
@@ -22,13 +20,26 @@
 
 - Base URL: `https://random-words-api.vercel.app/word`
 
-```html
-- /noun - /sentence - /question - /adjective - /idiom - /verb - /letter -
-/paragraph - /vocabulary - /1-word-quotes - /2-word-quotes - /3-word-quotes -
-/affirmation
+```text
+- /noun
+- /sentence
+- /question
+- /adjective
+- /idiom
+- /verb
+- /letter
+- /paragraph
+- /vocabulary
+- /1-word-quotes
+- /2-word-quotes
+- /3-word-quotes
+- /affirmation
 ```
 
 ## 🌐 Sample API Response
+
+API: `https://random-words-api.vercel.app/word/`
+Method: `GET`
 
 ```json
 [
@@ -42,6 +53,9 @@
 
 ## 🌐 Sample Dutch Response
 
+API: `https://random-words-api.vercel.app/word/dutch`
+Method: `GET`
+
 ```json
 [
   {
@@ -53,6 +67,9 @@
 ```
 
 ## 🌐 Sample Pronunciation Request
+
+API: `https://random-words-api.vercel.app/pronounce`
+Method: `POST`
 
 ```sh
 POST http://localhost:3000/pronounce
@@ -113,7 +130,11 @@ OR
 Project - Give Forked Repo URL - Go Live
 ```
 
-## ✍️ Commit
+## :question: How to Contribute?
+
+Make your changes and follow the below instructions. We follow conventional commits.
+
+### ✍️ Commit
 
 - Stage all changes
 
@@ -158,6 +179,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
+    <td align="center"><a href="https://github.com/mcnaveen"><img src="https://avatars.githubusercontent.com/u/8493007?v=4?s=100" width="100px;" alt=""/><br /><sub><b>MC Naveen</b></sub></a><br /><a href="https://github.com/mcnaveen/Random-Words-API/issues?q=author%3Amcnaveen" title="Bug reports">🐛</a> <a href="https://github.com/mcnaveen/Random-Words-API/commits?author=mcnaveen" title="Code">💻</a> <a href="#data-mcnaveen" title="Data">🔣</a> <a href="https://github.com/mcnaveen/Random-Words-API/commits?author=mcnaveen" title="Documentation">📖</a> <a href="#example-mcnaveen" title="Examples">💡</a> <a href="#ideas-mcnaveen" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-mcnaveen" title="Maintenance">🚧</a> <a href="https://github.com/mcnaveen/Random-Words-API/pulls?q=is%3Apr+reviewed-by%3Amcnaveen" title="Reviewed Pull Requests">👀</a></td>
     <td align="center"><a href="https://github.com/jonah-butler"><img src="https://avatars.githubusercontent.com/u/18040568?v=4?s=100" width="100px;" alt=""/><br /><sub><b>jonah-butler</b></sub></a><br /><a href="https://github.com/mcnaveen/Random-Words-API/commits?author=jonah-butler" title="Code">💻</a> <a href="https://github.com/mcnaveen/Random-Words-API/commits?author=jonah-butler" title="Documentation">📖</a></td>
     <td align="center"><a href="https://santhoshveer.com/"><img src="https://avatars.githubusercontent.com/u/10300271?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Santhosh Veer</b></sub></a><br /><a href="https://github.com/mcnaveen/Random-Words-API/commits?author=mskian" title="Code">💻</a> <a href="https://github.com/mcnaveen/Random-Words-API/commits?author=mskian" title="Documentation">📖</a> <a href="#ideas-mskian" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-mskian" title="Maintenance">🚧</a> <a href="https://github.com/mcnaveen/Random-Words-API/issues?q=author%3Amskian" title="Bug reports">🐛</a> <a href="https://github.com/mcnaveen/Random-Words-API/pulls?q=is%3Apr+reviewed-by%3Amskian" title="Reviewed Pull Requests">👀</a></td>
   </tr>
