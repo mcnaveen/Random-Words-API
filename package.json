@@ -15,9 +15,11 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "node index.js",
-		"action": "node test.js",
+		"action": "node ./test/test.js",
 		"dev": "nodemon index.js --ext '*'",
-		"commit": "gacp"
+		"commit": "gacp",
+		"contributors:add": "all-contributors add",
+		"contributors:generate": "all-contributors generate"
 	},
 	"type": "module",
 	"keywords": [
@@ -37,6 +39,7 @@
 	"author": "MC Naveen",
 	"license": "MIT",
 	"devDependencies": {
+		"all-contributors-cli": "^6.20.0",
 		"gacp": "^3.0.2",
 		"nodemon": "^2.0.19"
 	},
