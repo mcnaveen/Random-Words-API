@@ -1,7 +1,9 @@
 # Random Words API
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![build-test](https://github.com/mcnaveen/Random-Words-API/workflows/build-test/badge.svg)
@@ -126,10 +128,8 @@ OneClick Deploy on Vercel
 OR
 
 ```html
-- Fork the Repo
-- Login to Vercel (https://vercel.com/dashboard)
-- Click Import Project
-- Give Forked Repo URL - Go Live
+- Fork the Repo - Login to Vercel (https://vercel.com/dashboard) - Click Import
+Project - Give Forked Repo URL - Go Live
 ```
 
 ## :question: How to Contribute?
@@ -156,21 +156,22 @@ yarn commit
 git push <TO YOUR FORK>
 ```
 
-## ⚛ CREDITS
+## ⚛ USED BY
 
-- Thanks to [Santhosh Veer](https://github.com/mskian) for Progressive Web APP - [Source Code](https://github.com/mskian/vue-random-words)
+|      Project Name       |                        Demo/Preview                        |                        Source Code                        | Author                                   |
+| :---------------------: | :--------------------------------------------------------: | :-------------------------------------------------------: | ---------------------------------------- |
+|    Vue Random Words     |             [Demo](https://words.sanweb.info/)             |   [Source](https://github.com/mskian/vue-random-words)    | [@mskian](https://github.com/mskian)     |
+|    Speak & Spell Elm    |        [Demo](https://speak-and-spell.vercel.app/)         |  [Source](https://github.com/gacallea/elm_speakandspell)  | [@gacallea](https://github.com/gacallea) |
+|    Random Words CLI     | [Showcase](https://www.npmjs.com/package/random-words-cli) |  [Source](https://github.com/mcnaveen/random-words-cli)   | [@mcnaveen](https://github.com/mcnaveen) |
+| Random Words CLI (Deno) |                            NIL                             | [Source](https://github.com/mskian/deno-random-words-cli) | [@mskian](https://github.com/mskian)     |
 
-## ☑ LICENSE
+## ☑ License
 
 - MIT
 
-## ⚠ DISCLAIMER
+## ⚠ Disclaimer
 
 We don't own any data or word. All belongs to the owner of Website. Use it for educational purpose only.
-
-## 💰 HELP ME WITH DEVELOPMENT COST
-
-<a href="https://www.buymeacoffee.com/mcnaveen" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
 ## Contributors ✨
 
