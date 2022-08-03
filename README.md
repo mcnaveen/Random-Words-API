@@ -54,7 +54,7 @@
 
 ## 🌐 Sample Pronunciation Request
 
-```json
+```sh
 POST http://localhost:3000/pronounce
 Content-Type: application/json
 
