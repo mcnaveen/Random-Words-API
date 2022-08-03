@@ -13,3 +13,4 @@ app.js
 renovate.json
 proxy.js
 .env
+test

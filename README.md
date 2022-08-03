@@ -71,7 +71,7 @@ Content-Type: application/json
 }
 ```
 
-- Check [api.rest](/api.rest) file for more details
+- Check [api.rest](/test/api.rest) file for more details
 
 ## 💡 Learn New word
 
@@ -117,19 +117,19 @@ Project - Give Forked Repo URL - Go Live
 
 - Stage all changes
 
-```
+```sh
 git add .
 ```
 
 - Commit the changes
 
-```
+```sh
 yarn commit
 ```
 
 - Push the changes to GitHub
 
-```
+```sh
 git push <TO YOUR FORK>
 ```
 

@@ -17,10 +17,14 @@ router.post("/", function (req, res) {
   res.header("Strict-Transport-Security", "max-age=63072000");
   res.setHeader("Content-Type", "application/json");
 
-  var userWord = encodeURIComponent(req.body.word);
-  let wordData = pronounce(userWord);
-  const pronouncedWord = decodeURIComponent(wordData);
-  res.status(200).json({ pronunciation: pronouncedWord });
+  var userWord = encodeURIComponent(req.body.word) || "Hello World";
+  if (userWord == "undefined") {
+    res.status(400).json({ pronunciation: "Empty data" });
+  } else {
+    let wordData = pronounce(userWord);
+    const pronouncedWord = decodeURIComponent(wordData);
+    res.status(200).json({ pronunciation: pronouncedWord });
+  }
 });
 
 export default router;
