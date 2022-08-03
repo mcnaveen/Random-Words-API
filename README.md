@@ -126,8 +126,10 @@ OneClick Deploy on Vercel
 OR
 
 ```html
-- Fork the Repo - Login to Vercel (https://vercel.com/dashboard) - Click Import
-Project - Give Forked Repo URL - Go Live
+- Fork the Repo
+- Login to Vercel (https://vercel.com/dashboard)
+- Click Import Project
+- Give Forked Repo URL - Go Live
 ```
 
 ## :question: How to Contribute?
