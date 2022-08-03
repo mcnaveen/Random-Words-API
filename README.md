@@ -38,8 +38,8 @@
 
 ## 🌐 Sample API Response
 
-API: `https://random-words-api.vercel.app/word/`
-Method: `GET`
+- API: `https://random-words-api.vercel.app/word/`
+- Method: `GET`
 
 ```json
 [
@@ -53,8 +53,8 @@ Method: `GET`
 
 ## 🌐 Sample Dutch Response
 
-API: `https://random-words-api.vercel.app/word/dutch`
-Method: `GET`
+- API: `https://random-words-api.vercel.app/word/dutch`
+- Method: `GET`
 
 ```json
 [
@@ -68,8 +68,8 @@ Method: `GET`
 
 ## 🌐 Sample Pronunciation Request
 
-API: `https://random-words-api.vercel.app/pronounce`
-Method: `POST`
+- API: `https://random-words-api.vercel.app/pronounce`
+- Method: `POST`
 
 ```sh
 POST http://localhost:3000/pronounce
