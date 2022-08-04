@@ -163,7 +163,7 @@ git push <TO YOUR FORK>
 |    Vue Random Words     |             [Demo](https://words.sanweb.info/)             |   [Source](https://github.com/mskian/vue-random-words)    | [@mskian](https://github.com/mskian)     |
 |    Speak & Spell Elm    |        [Demo](https://speak-and-spell.vercel.app/)         |  [Source](https://github.com/gacallea/elm_speakandspell)  | [@gacallea](https://github.com/gacallea) |
 |    Random Words CLI     | [Showcase](https://www.npmjs.com/package/random-words-cli) |  [Source](https://github.com/mcnaveen/random-words-cli)   | [@mcnaveen](https://github.com/mcnaveen) |
-| Random Words CLI (Deno) |                            NIL                             | [Source](https://github.com/mskian/deno-random-words-cli) | [@mskian](https://github.com/mskian)     |
+| Random Words CLI (Deno) | [Showcase](https://deno.land/x/randomwords) | [Source](https://github.com/mskian/deno-random-words-cli) | [@mskian](https://github.com/mskian) |
 
 ## ☑ License
 
