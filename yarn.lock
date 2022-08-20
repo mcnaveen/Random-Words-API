@@ -77,31 +77,18 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@types/fs-extra@^9.0.0":
-  version "9.0.13"
-  resolved "https://registry.yarnpkg.com/@types/fs-extra/-/fs-extra-9.0.13.tgz#7594fbae04fe7f1918ce8b3d213f74ff44ac1f45"
-  integrity sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==
-  dependencies:
-    "@types/node" "*"
-
-"@types/node@*":
-  version "18.0.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.0.1.tgz#e91bd73239b338557a84d1f67f7b9e0f25643870"
-  integrity sha512-CmR8+Tsy95hhwtZBKJBs0/FFq4XX7sDZHlGGf+0q+BRZfMbOTkzkj0AFAuTyXbObDIoanaBBW0+KEW+m3N16Wg==
-
 "@types/parse-json@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
 
-"@vivaxy/git@^4.2.0":
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/@vivaxy/git/-/git-4.2.0.tgz#cbd331058423027ed6e6b26e606320b655c12a28"
-  integrity sha512-PuoUQDcxPBaTS0W2s+QCn/A1mP40Qiqb4kmB1bTS80R2xGv0zbQVjaAEmEHQz8yLyT2UISX/2Bfz6RD24yuVlw==
+"@vivaxy/git@^4.2.1":
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@vivaxy/git/-/git-4.2.1.tgz#99f0ee025b2170a2e0354b10a172fcc438c01533"
+  integrity sha512-Gpnne7sk3oTd0fyw1J3clVX2ZBkJjNRduccDbOcgYv31M35nBzUHSzQ56eFiJsOTNfdVadL2bo0ICw5oilGfEA==
   dependencies:
-    "@types/fs-extra" "^9.0.0"
     execa "^5.0.0"
-    fs-extra "^10.0.0"
+    fs-extra "^10.1.0"
 
 abbrev@1:
   version "1.1.1"
@@ -820,7 +807,7 @@ fresh@0.5.2:
   resolved "https://registry.yarnpkg.com/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
   integrity sha1-PYyt2Q2XZWn6g1qx+OSyOhBWBac=
 
-fs-extra@^10.0.0:
+fs-extra@^10.0.0, fs-extra@^10.1.0:
   version "10.1.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-10.1.0.tgz#02873cfbc4084dde127eaa5f9905eef2325d1abf"
   integrity sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==
@@ -839,14 +826,14 @@ function-bind@^1.1.1:
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
 
-gacp@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/gacp/-/gacp-3.0.2.tgz#053a1dae53d2fae9ac6ac66ff9e3b38fea3f187f"
-  integrity sha512-nhbjn5SD2NkajtmwMo+y8A+IJRBALNq1tSnbw5AvCx2fl2CmQcoeD4dXHMn54MivtjQfVVHTaEY8ZA83WfZ32Q==
+gacp@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/gacp/-/gacp-3.0.3.tgz#6698f661d81d8f4f3a10226b000e806bbf3f4301"
+  integrity sha512-ncBb1MI/TRWhGVIRHJYl2MkLfVzrKHdy+9YlqzbdpAx0/yOktJQjrNeH0ublga49Jzk7VoSU8QdUfEexDJOd6g==
   dependencies:
     "@commitlint/load" "^12.0.0"
     "@commitlint/types" "^12.0.0"
-    "@vivaxy/git" "^4.2.0"
+    "@vivaxy/git" "^4.2.1"
     chalk "^4.0.0"
     conventional-commit-types "^3.0.0"
     cosmiconfig "^7.0.0"

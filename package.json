@@ -40,7 +40,7 @@
 	"license": "MIT",
 	"devDependencies": {
 		"all-contributors-cli": "^6.20.0",
-		"gacp": "^3.0.2",
+		"gacp": "^3.0.3",
 		"nodemon": "^2.0.19"
 	},
 	"gacp": {
