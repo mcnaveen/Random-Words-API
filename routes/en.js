@@ -4,19 +4,13 @@ import axios from "axios";
 import * as  cheerio from "cheerio";
 import { pronounce } from "node-pronounce";
 import randomUseragent from "random-useragent";
+import { setDefaultHeaders } from "../utils/headers.js";
 const rua = randomUseragent.getRandom();
 var wordOfDay = [];
 const baseUrl = 'https://randomword.com';
 
 router.get("/", function (req, res) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With');
-  res.header("Access-Control-Allow-Methods", "GET");
-  res.header("X-Frame-Options", "DENY");
-  res.header("X-XSS-Protection", "1; mode=block");
-  res.header("X-Content-Type-Options", "nosniff");
-  res.header("Strict-Transport-Security", "max-age=63072000");
-  res.setHeader("Content-Type", "application/json");
+  setDefaultHeaders(res);
 
   axios({
     method: "GET",
@@ -70,14 +64,7 @@ router.get("/", function (req, res) {
 });
 
 router.get("/:pos", function (req, res) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With');
-  res.header("Access-Control-Allow-Methods", "GET");
-  res.header("X-Frame-Options", "DENY");
-  res.header("X-XSS-Protection", "1; mode=block");
-  res.header("X-Content-Type-Options", "nosniff");
-  res.header("Strict-Transport-Security", "max-age=63072000");
-  res.setHeader("Content-Type", "application/json");
+  setDefaultHeaders(res);
 
   const partOfSpeech = req.params.pos;
 

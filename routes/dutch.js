@@ -3,18 +3,12 @@ const router = express.Router();
 import { pronounce } from "node-pronounce";
 import { readFileSync } from "fs";
 import { randomArrayItem } from "random-array-item";
+import { setDefaultHeaders } from "../utils/headers.js";
 var dutchRandomWord = [];
 const dutchWordsData  = JSON.parse(readFileSync(new URL("../data/dutch/words.json", import.meta.url)));
 
 router.get("/", function (req, res) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With');
-  res.header("Access-Control-Allow-Methods", "GET");
-  res.header("X-Frame-Options", "DENY");
-  res.header("X-XSS-Protection", "1; mode=block");
-  res.header("X-Content-Type-Options", "nosniff");
-  res.header("Strict-Transport-Security", "max-age=63072000");
-  res.setHeader("Content-Type", "application/json");
+  setDefaultHeaders(res);
   
   if (dutchRandomWord.length > 0) {
     dutchRandomWord = [];
