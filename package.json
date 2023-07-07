@@ -39,7 +39,7 @@
 	"author": "MC Naveen",
 	"license": "MIT",
 	"devDependencies": {
-		"all-contributors-cli": "^6.20.0",
+		"all-contributors-cli": "^6.26.1",
 		"gacp": "^3.0.3",
 		"nodemon": "^2.0.19"
 	},
