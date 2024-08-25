@@ -1,6 +1,6 @@
 {
-    "name": "wotd",
-    "description": "Word of the Day.",
+    "name": "random-words-api",
+    "description": "API for getting random words in different languages",
     "repository": "https://github.com/mcnaveen/Random-Words-API",
-    "keywords": ["expressjs", "nodejs", "json"]
+    "keywords": ["expressjs", "nodejs", "json", "random-words", "api"]
 }

@@ -1,17 +1,25 @@
 import express from "express";
 const app = express();
 
-import home from './routes/home.js';
-import en from './routes/en.js';
-import dutch from './routes/dutch.js';
-import pronounce from './routes/pronounce.js';
+import english from './routes/english.js';
+import language from './routes/language.js';
+import swaggerUi from './swagger-ui.js';
+import { limiter } from "./utils/index.js";
 
-app.use('/', home);
-app.use('/word/dutch', dutch);
-app.use('/word', en);
-app.use('/pronounce', pronounce);
+// Apply rate limiter to all routes except root
+app.use((req, res, next) => {
+  if (req.path !== '/') {
+    return limiter(req, res, next);
+  }
+  next();
+});
 
-app.use('/', function(req, res) {
+app.use('/', swaggerUi);
+app.use('/word', english);
+app.use('/word', language);
+app.use('/api-docs', swaggerUi);
+
+app.use('/', function(_req, res) {
     res.status(404).json({
         error: 1,
         message: 'Page or Data not Found'
@@ -26,7 +34,7 @@ app.use((err, req, res, next) => {
     });
 });
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3002;
 app.listen(port, function() {
     console.log('listening on port ' + port);
 });

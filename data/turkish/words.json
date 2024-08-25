@@ -1,0 +1,623 @@
+[
+  {
+    "id": 1,
+    "word": "Merhaba",
+    "definition": "Hello"
+  },
+  {
+    "id": 2,
+    "word": "Ev",
+    "definition": "House"
+  },
+  {
+    "id": 3,
+    "word": "Su",
+    "definition": "Water"
+  },
+  {
+    "id": 4,
+    "word": "Kitap",
+    "definition": "Book"
+  },
+  {
+    "id": 5,
+    "word": "Arkadaş",
+    "definition": "Friend"
+  },
+  {
+    "id": 6,
+    "word": "Güneş",
+    "definition": "Sun"
+  },
+  {
+    "id": 7,
+    "word": "Ay",
+    "definition": "Moon"
+  },
+  {
+    "id": 8,
+    "word": "Yıldız",
+    "definition": "Star"
+  },
+  {
+    "id": 9,
+    "word": "Ağaç",
+    "definition": "Tree"
+  },
+  {
+    "id": 10,
+    "word": "Çiçek",
+    "definition": "Flower"
+  },
+  {
+    "id": 11,
+    "word": "Araba",
+    "definition": "Car"
+  },
+  {
+    "id": 12,
+    "word": "Okul",
+    "definition": "School"
+  },
+  {
+    "id": 13,
+    "word": "Öğretmen",
+    "definition": "Teacher"
+  },
+  {
+    "id": 14,
+    "word": "Öğrenci",
+    "definition": "Student"
+  },
+  {
+    "id": 15,
+    "word": "Aile",
+    "definition": "Family"
+  },
+  {
+    "id": 16,
+    "word": "Anne",
+    "definition": "Mother"
+  },
+  {
+    "id": 17,
+    "word": "Baba",
+    "definition": "Father"
+  },
+  {
+    "id": 18,
+    "word": "Kardeş",
+    "definition": "Sibling"
+  },
+  {
+    "id": 19,
+    "word": "Sevgi",
+    "definition": "Love"
+  },
+  {
+    "id": 20,
+    "word": "Mutluluk",
+    "definition": "Happiness"
+  },
+  {
+    "id": 21,
+    "word": "Zaman",
+    "definition": "Time"
+  },
+  {
+    "id": 22,
+    "word": "Yemek",
+    "definition": "Food"
+  },
+  {
+    "id": 23,
+    "word": "İçmek",
+    "definition": "To drink"
+  },
+  {
+    "id": 24,
+    "word": "Uyumak",
+    "definition": "To sleep"
+  },
+  {
+    "id": 25,
+    "word": "Çalışmak",
+    "definition": "To work"
+  },
+  {
+    "id": 26,
+    "word": "Oyun",
+    "definition": "Game"
+  },
+  {
+    "id": 27,
+    "word": "Müzik",
+    "definition": "Music"
+  },
+  {
+    "id": 28,
+    "word": "Dans",
+    "definition": "Dance"
+  },
+  {
+    "id": 29,
+    "word": "Spor",
+    "definition": "Sport"
+  },
+  {
+    "id": 30,
+    "word": "Renk",
+    "definition": "Color"
+  },
+  {
+    "id": 31,
+    "word": "Kırmızı",
+    "definition": "Red"
+  },
+  {
+    "id": 32,
+    "word": "Mavi",
+    "definition": "Blue"
+  },
+  {
+    "id": 33,
+    "word": "Yeşil",
+    "definition": "Green"
+  },
+  {
+    "id": 34,
+    "word": "Sarı",
+    "definition": "Yellow"
+  },
+  {
+    "id": 35,
+    "word": "Siyah",
+    "definition": "Black"
+  },
+  {
+    "id": 36,
+    "word": "Beyaz",
+    "definition": "White"
+  },
+  {
+    "id": 37,
+    "word": "Gün",
+    "definition": "Day"
+  },
+  {
+    "id": 38,
+    "word": "Gece",
+    "definition": "Night"
+  },
+  {
+    "id": 39,
+    "word": "Sabah",
+    "definition": "Morning"
+  },
+  {
+    "id": 40,
+    "word": "Akşam",
+    "definition": "Evening"
+  },
+  {
+    "id": 41,
+    "word": "Yıl",
+    "definition": "Year"
+  },
+  {
+    "id": 42,
+    "word": "Ay",
+    "definition": "Month"
+  },
+  {
+    "id": 43,
+    "word": "Hafta",
+    "definition": "Week"
+  },
+  {
+    "id": 44,
+    "word": "Saat",
+    "definition": "Hour"
+  },
+  {
+    "id": 45,
+    "word": "Dakika",
+    "definition": "Minute"
+  },
+  {
+    "id": 46,
+    "word": "Saniye",
+    "definition": "Second"
+  },
+  {
+    "id": 47,
+    "word": "Dil",
+    "definition": "Language"
+  },
+  {
+    "id": 48,
+    "word": "Kelime",
+    "definition": "Word"
+  },
+  {
+    "id": 49,
+    "word": "Cümle",
+    "definition": "Sentence"
+  },
+  {
+    "id": 50,
+    "word": "Paragraf",
+    "definition": "Paragraph"
+  },
+  {
+    "id": 51,
+    "word": "Sayı",
+    "definition": "Number"
+  },
+  {
+    "id": 52,
+    "word": "Bir",
+    "definition": "One"
+  },
+  {
+    "id": 53,
+    "word": "İki",
+    "definition": "Two"
+  },
+  {
+    "id": 54,
+    "word": "Üç",
+    "definition": "Three"
+  },
+  {
+    "id": 55,
+    "word": "Dört",
+    "definition": "Four"
+  },
+  {
+    "id": 56,
+    "word": "Beş",
+    "definition": "Five"
+  },
+  {
+    "id": 57,
+    "word": "On",
+    "definition": "Ten"
+  },
+  {
+    "id": 58,
+    "word": "Yüz",
+    "definition": "Hundred"
+  },
+  {
+    "id": 59,
+    "word": "Bin",
+    "definition": "Thousand"
+  },
+  {
+    "id": 60,
+    "word": "Milyon",
+    "definition": "Million"
+  },
+  {
+    "id": 61,
+    "word": "Hayvan",
+    "definition": "Animal"
+  },
+  {
+    "id": 62,
+    "word": "Köpek",
+    "definition": "Dog"
+  },
+  {
+    "id": 63,
+    "word": "Kedi",
+    "definition": "Cat"
+  },
+  {
+    "id": 64,
+    "word": "Kuş",
+    "definition": "Bird"
+  },
+  {
+    "id": 65,
+    "word": "Balık",
+    "definition": "Fish"
+  },
+  {
+    "id": 66,
+    "word": "At",
+    "definition": "Horse"
+  },
+  {
+    "id": 67,
+    "word": "İnek",
+    "definition": "Cow"
+  },
+  {
+    "id": 68,
+    "word": "Tavuk",
+    "definition": "Chicken"
+  },
+  {
+    "id": 69,
+    "word": "Koyun",
+    "definition": "Sheep"
+  },
+  {
+    "id": 70,
+    "word": "Aslan",
+    "definition": "Lion"
+  },
+  {
+    "id": 71,
+    "word": "Kaplan",
+    "definition": "Tiger"
+  },
+  {
+    "id": 72,
+    "word": "Fil",
+    "definition": "Elephant"
+  },
+  {
+    "id": 73,
+    "word": "Maymun",
+    "definition": "Monkey"
+  },
+  {
+    "id": 74,
+    "word": "Yılan",
+    "definition": "Snake"
+  },
+  {
+    "id": 75,
+    "word": "Kurbağa",
+    "definition": "Frog"
+  },
+  {
+    "id": 76,
+    "word": "Böcek",
+    "definition": "Insect"
+  },
+  {
+    "id": 77,
+    "word": "Arı",
+    "definition": "Bee"
+  },
+  {
+    "id": 78,
+    "word": "Kelebek",
+    "definition": "Butterfly"
+  },
+  {
+    "id": 79,
+    "word": "Karınca",
+    "definition": "Ant"
+  },
+  {
+    "id": 80,
+    "word": "Örümcek",
+    "definition": "Spider"
+  },
+  {
+    "id": 81,
+    "word": "Vücut",
+    "definition": "Body"
+  },
+  {
+    "id": 82,
+    "word": "Baş",
+    "definition": "Head"
+  },
+  {
+    "id": 83,
+    "word": "Göz",
+    "definition": "Eye"
+  },
+  {
+    "id": 84,
+    "word": "Kulak",
+    "definition": "Ear"
+  },
+  {
+    "id": 85,
+    "word": "Burun",
+    "definition": "Nose"
+  },
+  {
+    "id": 86,
+    "word": "Ağız",
+    "definition": "Mouth"
+  },
+  {
+    "id": 87,
+    "word": "Diş",
+    "definition": "Tooth"
+  },
+  {
+    "id": 88,
+    "word": "Saç",
+    "definition": "Hair"
+  },
+  {
+    "id": 89,
+    "word": "El",
+    "definition": "Hand"
+  },
+  {
+    "id": 90,
+    "word": "Ayak",
+    "definition": "Foot"
+  },
+  {
+    "id": 91,
+    "word": "Bacak",
+    "definition": "Leg"
+  },
+  {
+    "id": 92,
+    "word": "Kol",
+    "definition": "Arm"
+  },
+  {
+    "id": 93,
+    "word": "Parmak",
+    "definition": "Finger"
+  },
+  {
+    "id": 94,
+    "word": "Tırnak",
+    "definition": "Nail"
+  },
+  {
+    "id": 95,
+    "word": "Kalp",
+    "definition": "Heart"
+  },
+  {
+    "id": 96,
+    "word": "Beyin",
+    "definition": "Brain"
+  },
+  {
+    "id": 97,
+    "word": "Akciğer",
+    "definition": "Lung"
+  },
+  {
+    "id": 98,
+    "word": "Mide",
+    "definition": "Stomach"
+  },
+  {
+    "id": 99,
+    "word": "Karaciğer",
+    "definition": "Liver"
+  },
+  {
+    "id": 100,
+    "word": "Böbrek",
+    "definition": "Kidney"
+  },
+  {
+    "id": 101,
+    "word": "Giysi",
+    "definition": "Clothing"
+  },
+  {
+    "id": 102,
+    "word": "Gömlek",
+    "definition": "Shirt"
+  },
+  {
+    "id": 103,
+    "word": "Pantolon",
+    "definition": "Pants"
+  },
+  {
+    "id": 104,
+    "word": "Elbise",
+    "definition": "Dress"
+  },
+  {
+    "id": 105,
+    "word": "Ceket",
+    "definition": "Jacket"
+  },
+  {
+    "id": 106,
+    "word": "Ayakkabı",
+    "definition": "Shoe"
+  },
+  {
+    "id": 107,
+    "word": "Çorap",
+    "definition": "Sock"
+  },
+  {
+    "id": 108,
+    "word": "Şapka",
+    "definition": "Hat"
+  },
+  {
+    "id": 109,
+    "word": "Eldiven",
+    "definition": "Glove"
+  },
+  {
+    "id": 110,
+    "word": "Kemer",
+    "definition": "Belt"
+  },
+  {
+    "id": 111,
+    "word": "Yiyecek",
+    "definition": "Food"
+  },
+  {
+    "id": 112,
+    "word": "Ekmek",
+    "definition": "Bread"
+  },
+  {
+    "id": 113,
+    "word": "Süt",
+    "definition": "Milk"
+  },
+  {
+    "id": 114,
+    "word": "Peynir",
+    "definition": "Cheese"
+  },
+  {
+    "id": 115,
+    "word": "Yumurta",
+    "definition": "Egg"
+  },
+  {
+    "id": 116,
+    "word": "Et",
+    "definition": "Meat"
+  },
+  {
+    "id": 117,
+    "word": "Tavuk",
+    "definition": "Chicken"
+  },
+  {
+    "id": 118,
+    "word": "Balık",
+    "definition": "Fish"
+  },
+  {
+    "id": 119,
+    "word": "Pirinç",
+    "definition": "Rice"
+  },
+  {
+    "id": 120,
+    "word": "Makarna",
+    "definition": "Pasta"
+  },
+  {
+    "id": 121,
+    "word": "Sebze",
+    "definition": "Vegetable"
+  },
+  {
+    "id": 122,
+    "word": "Meyve",
+    "definition": "Fruit"
+  },
+  {
+    "id": 123,
+    "word": "Elma",
+    "definition": "Apple"
+  },
+  {
+    "id": 124,
+    "word": "Muz",
+    "definition": "Banana"
+  }
+]
+

@@ -10,18 +10,29 @@
 
 🦄 Get Random Words (with pronunciation) for Free using this API
 
+## 🌍 Languages
+
+- English
+- Dutch
+- Spanish
+- French
+- Chinese
+- Japanese
+
 ## 🚀 API
 
-- Free API - `https://random-words-api.vercel.app/word`
+- English Random Words - `https://random-words-api.vercel.app/word`
 - Dutch Random Words - `https://random-words-api.vercel.app/word/dutch`
-- Get Pronunciation for a Word - `https://random-words-api.vercel.app/pronounce/`
+- Spanish Random Words - `https://random-words-api.vercel.app/word/spanish`
+- French Random Words - `https://random-words-api.vercel.app/word/french`
+- Chinese Random Words - `https://random-words-api.vercel.app/word/chinese`
+- Japanese Random Words - `https://random-words-api.vercel.app/word/japanese`
+- Turkish Random Words - `https://random-words-api.vercel.app/word/turkish`
 
 - PWA Demo - [Check Here](https://words.sanweb.info/)
 
-## 🎛 Route Options
-
-- Base URL: `https://random-words-api.vercel.app/word`
-
+## 🎛 Route Options (English Only)
+- Base URL: `https://random-words-api.vercel.app/word/english`
 ```text
 - /noun
 - /sentence
@@ -68,28 +79,6 @@
 ]
 ```
 
-## 🌐 Sample Pronunciation Request
-
-- API: `https://random-words-api.vercel.app/pronounce`
-- Method: `POST`
-
-```sh
-POST http://localhost:3000/pronounce
-Content-Type: application/json
-
-{
-  "word": "This is amazing"
-}
-```
-
-## 📣 Sample Pronunciation Response
-
-```json
-{
-  "pronunciation": "this is amasink"
-}
-```
-
 - Check [api.rest](/test/api.rest) file for more details
 
 ## 💡 Learn New word
@@ -101,16 +90,16 @@ Content-Type: application/json
 
 ```sh
 # Clone the Repo
-git clone https://github.com/mcnaveen/Random-Words-API random-words
+git clone https://github.com/mcnaveen/random-words-api random-words-api
 
 # Cd into Directory
 cd random-words
 
 # Install Dependencies
-yarn install
+npm install
 
 # Start the Development Server
-yarn start
+npm run dev
 ```
 
 ## 🔀 Deploying to Heroku
@@ -131,6 +120,23 @@ OR
 - Fork the Repo - Login to Vercel (https://vercel.com/dashboard) - Click Import
 Project - Give Forked Repo URL - Go Live
 ```
+
+## 🔐 Rate Limit
+
+- To configure the rate limit, edit the `utils/index.js` file
+- Look for `limiter` variable
+- `max` is the maximum number of requests allowed in a given time window
+- `windowMs` is the time window in milliseconds
+- `message` is the message to be returned when the rate limit is exceeded
+
+## 😇 Add New Language
+- Create a new folder in `data` with the full language name `ex: english`
+- Add the words in the `words.json` file
+- It should be an array of objects with `id`, `word`, and `definition` properties
+- The `id` should be a unique number for each word
+- The `word` should be the word in the language
+- The `definition` should be the definition of the word in English
+- The `pronunciation` should be the pronunciation of the word in the language (Optional)
 
 ## :question: How to Contribute?
 
