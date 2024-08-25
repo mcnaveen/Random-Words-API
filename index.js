@@ -1,10 +1,15 @@
 import express from "express";
-const app = express();
-
+import path from "path";
+import { fileURLToPath } from "url";
+import swaggerUi from "./swagger-ui.js";
 import english from './routes/english.js';
 import language from './routes/language.js';
-import swaggerUi from './swagger-ui.js';
 import { limiter } from "./utils/index.js";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const app = express();
 
 // Apply rate limiter to all routes except root
 app.use((req, res, next) => {
@@ -14,8 +19,10 @@ app.use((req, res, next) => {
   next();
 });
 
+// Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, "public")));
 
+app.use('/', swaggerUi);
 app.use('/word', english);
 app.use('/word', language);
 app.use('/api-docs', swaggerUi);

@@ -1,7 +1,6 @@
 import express from "express";
 import swaggerUi from "swagger-ui-express";
 import specs from "./swagger.js";
-import path from "path";
 
 const router = express.Router();
 
