@@ -1,6 +1,7 @@
 import express from "express";
 import swaggerUi from "swagger-ui-express";
 import specs from "./swagger.js";
+import path from "path";
 
 const router = express.Router();
 
@@ -9,8 +10,11 @@ router.get(
   "/",
   swaggerUi.setup(specs, {
     explorer: true,
-    customJs: ["swagger-ui-bundle.js", "swagger-ui-standalone-preset.js"],
-    customCss: "swagger-ui.min.css",
+    customJs: [
+      "/swagger-ui-bundle.js",
+      "/swagger-ui-standalone-preset.js"
+    ],
+    customCss: "/swagger-ui.min.css",
   })
 );
 

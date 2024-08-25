@@ -14,7 +14,8 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use('/', swaggerUi);
+app.use(express.static(path.join(__dirname, "public")));
+
 app.use('/word', english);
 app.use('/word', language);
 app.use('/api-docs', swaggerUi);
@@ -23,7 +24,7 @@ app.use('/', function(_req, res) {
     res.status(404).json({
         error: 1,
         message: 'Page or Data not Found'
-    });
+    })
 })
 
 app.use((err, req, res, next) => {
