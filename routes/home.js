@@ -9,7 +9,10 @@ router.get("/", function (req, res) {
   res.header("X-XSS-Protection", "1; mode=block");
   res.header("X-Content-Type-Options", "nosniff");
   res.header("Strict-Transport-Security", "max-age=63072000");
-  res.json("Random Words API");
+  res.json({
+    message: "Welcome to the Random Words API",
+    docs: "https://github.com/mcnaveen/random-words-api"
+  });
 });
 
 export default router;
