@@ -1,13 +1,23 @@
 import express from "express";
 const app = express();
 
-import home from './routes/home.js';
 import english from './routes/english.js';
 import language from './routes/language.js';
+import swaggerUi from './swagger-ui.js';
+import { limiter } from "./utils/index.js";
 
-app.use('/', home);
+// Apply rate limiter to all routes except root
+app.use((req, res, next) => {
+  if (req.path !== '/') {
+    return limiter(req, res, next);
+  }
+  next();
+});
+
+app.use('/', swaggerUi);
 app.use('/word', english);
 app.use('/word', language);
+app.use('/api-docs', swaggerUi);
 
 app.use('/', function(_req, res) {
     res.status(404).json({

@@ -9,6 +9,39 @@ const router = express.Router();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+/**
+ * @swagger
+ * /word/{language}:
+ *   get:
+ *     summary: Get a random word in a specific language
+ *     description: Retrieve a random word with its definition in a specified language
+ *     parameters:
+ *       - in: path
+ *         name: language
+ *         required: true
+ *         schema:
+ *           $ref: '#/components/schemas/Language'
+ *     responses:
+ *       200:
+ *         description: Successful response
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 type: object
+ *                 properties:
+ *                   id:
+ *                     type: integer
+ *                   word:
+ *                     type: string
+ *                   definition:
+ *                     type: string
+ *       404:
+ *         description: Language not supported
+ *       500:
+ *         description: Server error
+ */
 router.get("/:language", async function (req, res) {
   defaultHeaders(res);
   const language = req.params.language.toLowerCase();

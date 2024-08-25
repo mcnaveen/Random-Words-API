@@ -121,6 +121,14 @@ OR
 Project - Give Forked Repo URL - Go Live
 ```
 
+## 🔐 Rate Limit
+
+- To configure the rate limit, edit the `utils/index.js` file
+- Look for `limiter` variable
+- `max` is the maximum number of requests allowed in a given time window
+- `windowMs` is the time window in milliseconds
+- `message` is the message to be returned when the rate limit is exceeded
+
 ## 😇 Add New Language
 - Create a new folder in `data` with the full language name `ex: english`
 - Add the words in the `words.json` file
