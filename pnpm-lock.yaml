@@ -41,7 +41,7 @@ devDependencies:
     specifier: ^3.0.3
     version: 3.0.3
   nodemon:
-    specifier: ^2.0.19
+    specifier: ^2.0.22
     version: 2.0.22
 
 packages:

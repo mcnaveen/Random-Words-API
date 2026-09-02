@@ -44,7 +44,7 @@
 	"devDependencies": {
 		"all-contributors-cli": "^6.20.0",
 		"gacp": "^3.0.3",
-		"nodemon": "^2.0.19"
+		"nodemon": "^2.0.22"
 	},
 	"gacp": {
 		"add": false,
