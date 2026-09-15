@@ -12,7 +12,7 @@
 		"node-pronounce": "^0.0.4",
 		"random-array-item": "^0.0.2",
 		"random-useragent": "^0.5.0",
-		"swagger-jsdoc": "^6.2.8",
+		"swagger-jsdoc": "^6.3.0",
 		"swagger-ui-express": "^5.0.1"
 	},
 	"scripts": {
