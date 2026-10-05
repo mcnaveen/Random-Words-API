@@ -15,8 +15,8 @@ dependencies:
     specifier: ^4.18.2
     version: 4.19.2
   express-rate-limit:
-    specifier: ^7.4.0
-    version: 7.4.0(express@4.19.2)
+    specifier: ^7.5.1
+    version: 7.5.1(express@4.19.2)
   node-pronounce:
     specifier: ^0.0.4
     version: 0.0.4
@@ -854,11 +854,11 @@ packages:
       strip-final-newline: 2.0.0
     dev: true
 
-  /express-rate-limit@7.4.0(express@4.19.2):
-    resolution: {integrity: sha512-v1204w3cXu5gCDmAvgvzI6qjzZzoMWKnyVDk3ACgfswTQLYiGen+r8w0VnXnGMmzEN/g8fwIQ4JrFFd4ZP6ssg==}
+  /express-rate-limit@7.5.1(express@4.19.2):
+    resolution: {integrity: sha512-7iN8iPMDzOMHPUYllBEsQdWVB6fPDMPqwjBaFrgr4Jgr/+okjvzAy+UHlYYL/Vs0OsOrMkwS6PJDkFlJwoxUnw==}
     engines: {node: '>= 16'}
     peerDependencies:
-      express: 4 || 5 || ^5.0.0-beta.1
+      express: '>= 4.11'
     dependencies:
       express: 4.19.2
     dev: false
