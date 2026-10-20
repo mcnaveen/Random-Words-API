@@ -35,7 +35,7 @@ dependencies:
 
 devDependencies:
   all-contributors-cli:
-    specifier: ^6.20.0
+    specifier: ^6.26.1
     version: 6.26.1
   gacp:
     specifier: ^3.0.3
